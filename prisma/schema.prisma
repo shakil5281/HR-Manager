@@ -1,0 +1,16 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model ProductionReport {
+  id        Int      @id @default(autoincrement())
+  date      DateTime
+  shift     String
+  quantity  Int
+  createdAt DateTime @default(now())
+}
