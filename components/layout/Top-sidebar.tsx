@@ -39,12 +39,15 @@ export function TopSidebar({
   const { isMobile } = useSidebar()
   const pathName = usePathname()
   return (
-    <SidebarGroup className="group-data-[collapsible=icon]:hidden">
+    <SidebarGroup>
       <SidebarGroupLabel>Home</SidebarGroupLabel>
       <SidebarMenu>
         {projects.map((item) => (
           <SidebarMenuItem key={item.name}>
-            <SidebarMenuButton className={pathName === item.url ? 'bg-blue-100 hover:bg-blue-100' : ''} asChild>
+            <SidebarMenuButton
+             className={pathName === item.url ? 'bg-blue-100 hover:bg-blue-100' : ''} 
+             tooltip={item.name}
+             asChild>
               <Link href={item.url}>
                 <item.icon />
                 <span>{item.name}</span>
