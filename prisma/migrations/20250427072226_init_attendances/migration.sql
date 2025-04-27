@@ -1,0 +1,10 @@
+-- CreateTable
+CREATE TABLE "Attendance" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "userSn" INTEGER NOT NULL,
+    "deviceUserId" TEXT NOT NULL,
+    "recordTime" DATETIME NOT NULL,
+    "ip" TEXT NOT NULL,
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" DATETIME NOT NULL
+);

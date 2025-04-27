@@ -14,3 +14,15 @@ model ProductionReport {
   quantity  Int
   createdAt DateTime @default(now())
 }
+
+
+model Attendance {
+  id             Int      @id @default(autoincrement())
+  userSn         Int
+  deviceUserId   String
+  recordTime     DateTime
+  ip             String
+
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+}
