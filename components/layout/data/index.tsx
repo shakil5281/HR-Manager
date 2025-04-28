@@ -41,52 +41,109 @@ export const data = {
         {
             name: "Dashboard",
             url: "/dashboard",
-            icon: LayoutDashboard ,
+            icon: LayoutDashboard,
         },
         {
             name: "Task",
             url: "/task",
-            icon: CircleCheckBig ,
+            icon: CircleCheckBig,
         },
         {
             name: "Users",
             url: "/users",
-            icon: ShieldUser ,
+            icon: ShieldUser,
         },
     ],
     navMain: [
         {
-            title: "Playground",
+            title: "Manpower",
             url: "#",
             icon: SquareTerminal,
             isActive: true,
             items: [
                 {
-                    title: "History",
-                    url: "/history",
+                    title: "Create Employee",
+                    url: "/create-employee",
                 },
                 {
-                    title: "Starred",
-                    url: "#",
+                    title: "Employee List",
+                    url: "/employee-list",
                 },
                 {
-                    title: "Settings",
-                    url: "#",
+                    title: "Job Age",
+                    url: "/job-age",
                 },
+                {
+                    title: "Requirement",
+                    url: "/requirement",
+                }
+            ]
+
+        },
+        {
+            title: "Attendance",
+            url: "#",
+            icon: SquareTerminal,
+            isActive: false,
+            items: [
+                {
+                    title: "Summary",
+                    url: "/summary",
+                },
+                {
+                    title: "Daily Attendance",
+                    url: "/daily-attendance",
+                },
+                {
+                    title: "Job Card",
+                    url: "/job-card",
+                },
+                {
+                    title: "Leave",
+                    url: "/leave",
+                },
+                {
+                    title: "Overtime",
+                    url: "/overtime",
+                },
+                {
+                    title: "Holidays",
+                    url: "/holidays",
+                }
             ],
         },
         {
-            title: "Models",
+            title: "Payroll",
             url: "#",
             icon: Bot,
             items: [
                 {
-                    title: "Genesis",
-                    url: "#",
+                    title: "Summary",
+                    url: "/summary",
                 },
                 {
-                    title: "Explorer",
-                    url: "#",
+                    title: "Salary",
+                    url: "/salary",
+                },
+                {
+                    title: "Salary Structure",
+                    url: "/salary-structure",
+                },
+                {
+                    title: "Salary Process",
+                    url: "/salary-process",
+                },
+                {
+                    title: "Salary Slip",
+                    url: "/salary-slip",
+                },
+                {
+                    title: "Daily Salary sheet",
+                    url: "/daily-salary-sheet",
+                },
+                {
+                    title: "Monthly Salary sheet",
+                    url: "/monthly-salary-sheet",
                 },
                 {
                     title: "Quantum",
@@ -100,21 +157,37 @@ export const data = {
             icon: BookOpen,
             items: [
                 {
-                    title: "Introduction",
-                    url: "#",
+                    title: "Company Information",
+                    url: "/compary-information",
                 },
                 {
-                    title: "Get Started",
-                    url: "#",
+                    title: "Department",
+                    url: "/department",
                 },
                 {
-                    title: "Tutorials",
-                    url: "#",
+                    title: "Designation",
+                    url: "designation",
                 },
                 {
-                    title: "Changelog",
-                    url: "#",
+                    title: "Section",
+                    url: "/section",
                 },
+                {
+                    title: "Shift",
+                    url: "/shift",
+                },
+                {
+                    title: "location",
+                    url: "/location",
+                },
+                {
+                    title: "Degree",
+                    url: "/degree",
+                },
+                {
+                    title: "",
+                    url: ""
+                }
             ],
         },
         {
@@ -124,19 +197,42 @@ export const data = {
             items: [
                 {
                     title: "General",
-                    url: "#",
+                    url: "/general",
                 },
                 {
-                    title: "Team",
-                    url: "#",
+                    title: "Users",
+                    url: "/users",
                 },
                 {
-                    title: "Billing",
-                    url: "#",
+                    title: "Permissions",
+                    url: "/permissions",
                 },
                 {
                     title: "Limits",
-                    url: "#",
+                    url: "/limits",
+                },
+            ],
+        },
+        {
+            title: "ZK Device",
+            url: "#",
+            icon: Settings2,
+            items: [
+                {
+                    title: "Status",
+                    url: "/status",
+                },
+                {
+                    title: "Data Collection",
+                    url: "/data-collection",
+                },
+                {
+                    title: "User Management",
+                    url: "/user-management",
+                },
+                {
+                    title: "Backup",
+                    url: "/backup",
                 },
             ],
         },
